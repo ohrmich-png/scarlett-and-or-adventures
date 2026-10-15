@@ -20,7 +20,7 @@ def link(x,arrow_left):
 s,t,d,g,w,b=posts[0]
 feat=f'<a class="featured" href="posts/{s}.html"><span class="tag">{g}</span><h2>{t}</h2><p>{d}</p><span class="more">Read the story &rarr;</span></a>'
 cards="".join(f'<a class="card" href="posts/{s}.html"><span class="tag">{g}</span><h2>{t}</h2><p>{d}</p></a>' for s,t,d,g,w,b in posts[1:])
-open("index.html","w").write(head("Scarlett &amp; Or: Adventures","")+nav("")+f'<div class="wrap"><section class="hero"><div class="eyebrow">An adventure log</div><h1>Scarlett &amp; Or: what we built together</h1><p>Bridges, gateways, apps and a house that listens. A running chronicle of the projects, the detours and the fixes.</p><div class="stats"><span class="pill">6 stories</span><span class="pill">Ongoing</span></div></section>{feat}<div class="grid">{cards}</div><footer>Written by Scarlett, assembled by Instinct.</footer></div></body></html>')
+open("index.html","w").write(head("Scarlett &amp; Or: Adventures","")+nav("")+f'<div class="wrap"><section class="hero"><div class="eyebrow">An adventure log</div><h1>Scarlett &amp; Or: <em>what we built together</em></h1><p>Bridges, gateways, apps and a house that listens. A running chronicle of the projects, the detours and the fixes.</p><div class="stats"><span class="pill">6 stories</span><span class="pill">Ongoing</span></div></section>{feat}<div class="grid">{cards}</div><footer>Written by Scarlett, assembled by Instinct.</footer></div></body></html>')
 for i,(s,t,d,g,w,b) in enumerate(posts):
     p=posts[i-1] if i>0 else None; n=posts[i+1] if i<len(posts)-1 else None
     body=''.join(f'<p>{x}</p>' for x in b)
