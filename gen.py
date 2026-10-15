@@ -12,17 +12,29 @@ posts=[
 ("flight-radar","Flight radar","A live ADS-B tracking site, running on a schedule.","Project","October 2026",
 ["Flight radar is a live ADS-B tracking project. It tracks aircraft live from ADS-B data and shows them on a site.","It is one more thing we built along the way, and it stays on the list of stories to expand."]),
 ]
+import json
+photos={p["slug"]:p for p in json.load(open("photos.json"))}
+def picture(slug,root="",eager=False):
+    p=photos[slug]
+    loading="eager" if eager else "lazy"
+    return f'<div class="visual"><img src="{root}images/{slug}.webp" srcset="{root}images/{slug}-small.webp 720w, {root}images/{slug}.webp 1440w" sizes="(max-width:640px) 100vw, 900px" alt="{p["alt"]}" loading="{loading}" decoding="async" style="object-position:{p["position"]}"></div>'
+def credit(slug):
+    p=photos[slug]
+    return f'<figcaption>Illustrative stock photograph by <a href="{p["source"]}">{p["author"]} / Unsplash</a>. Not Or' + "\'" + 's own setup.</figcaption>'
 def head(t,css): return f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>{t}</title><link rel="stylesheet" href="{css}style.css"></head><body>'
 def nav(r): return f'<nav><div><b><a href="{r}index.html" style="color:inherit">Scarlett &amp; Or</a></b><span>Adventure log</span></div></nav>'
 def link(x,arrow_left):
     if not x: return ""
     return f'<a href="{x[0]}.html">&larr; {x[1]}</a>' if arrow_left else f'<a href="{x[0]}.html">{x[1]} &rarr;</a>'
 s,t,d,g,w,b=posts[0]
-feat=f'<a class="featured" href="posts/{s}.html"><span class="tag">{g}</span><h2>{t}</h2><p>{d}</p><span class="more">Read the story &rarr;</span></a>'
-cards="".join(f'<a class="card" href="posts/{s}.html"><span class="tag">{g}</span><h2>{t}</h2><p>{d}</p></a>' for s,t,d,g,w,b in posts[1:])
-open("index.html","w").write(head("Scarlett &amp; Or: Adventures","")+nav("")+f'<div class="wrap"><section class="hero"><div class="eyebrow">An adventure log</div><h1>Scarlett &amp; Or: <em>what we built together</em></h1><p>Bridges, gateways, apps and a house that listens. A running chronicle of the projects, the detours and the fixes.</p><div class="stats"><span class="pill">6 stories</span><span class="pill">Ongoing</span></div></section>{feat}<div class="grid">{cards}</div><footer>Written by Scarlett, assembled by Instinct.</footer></div></body></html>')
+feat=f'<a class="featured" href="posts/{s}.html">{picture(s,eager=True)}<div class="card-copy"><span class="tag">{g}</span><h2>{t}</h2><p>{d}</p><span class="more">Read the story &rarr;</span></div></a>'
+cards="".join(f'<a class="card" href="posts/{s}.html">{picture(s)}<div class="card-copy"><span class="tag">{g}</span><h2>{t}</h2><p>{d}</p></div></a>' for s,t,d,g,w,b in posts[1:])
+open("index.html","w").write(head("Scarlett &amp; Or: Adventures","")+nav("")+f'<div class="wrap"><section class="hero"><div class="eyebrow">An adventure log</div><h1>Scarlett &amp; Or: <em>what we built together</em></h1><p>Bridges, gateways, apps and a house that listens. A running chronicle of the projects, the detours and the fixes.</p><div class="stats"><span class="pill">6 stories</span><span class="pill">Ongoing</span></div></section>{feat}<div class="grid">{cards}</div><footer>Written by Scarlett, assembled by Instinct.<div class="photo-note">Illustrative stock photography, not the actual project setups. <a href="photo-credits.html">Photo credits</a></div></footer></div></body></html>')
 for i,(s,t,d,g,w,b) in enumerate(posts):
     p=posts[i-1] if i>0 else None; n=posts[i+1] if i<len(posts)-1 else None
     body=''.join(f'<p>{x}</p>' for x in b)
     pn=f'<div class="pn"><span>{link(p,True)}</span><span>{link(n,False)}</span></div>'
-    open(f"posts/{s}.html","w").write(head(t,"../")+nav("../")+f'<div class="wrap"><a class="back" href="../index.html">&larr; All adventures</a><article><span class="tag">{g}</span><h1>{t}</h1><div class="meta">{w} &middot; by Scarlett</div><p class="lede">{d}</p>{body}{pn}</article></div></body></html>')
+    open(f"posts/{s}.html","w").write(head(t,"../")+nav("../")+f'<div class="wrap"><a class="back" href="../index.html">&larr; All adventures</a><article><span class="tag">{g}</span><h1>{t}</h1><div class="meta">{w} &middot; by Scarlett</div><p class="lede">{d}</p><figure class="story-photo">{picture(s,"../",True)}{credit(s)}</figure>{body}{pn}</article></div></body></html>')
+import html
+items=''.join(f'<li><b>{html.escape(p["slug"].replace("-"," ").title())}</b><br>Photograph by <a href="{p["source"]}">{html.escape(p["author"])} on Unsplash</a>.</li>' for p in photos.values())
+open('photo-credits.html','w').write(head('Photography credits','')+nav('')+'<div class="wrap"><a class="back" href="index.html">&larr; All adventures</a><article><span class="tag">Photography</span><h1>Behind the images</h1><p class="lede">Real photography, chosen for the atmosphere.</p><p>These are illustrative stock photographs, not photographs of Or, his home, his devices or the projects themselves. No AI-generated images are used.</p><p>Downloaded from Unsplash and used under the <a href="https://unsplash.com/license">Unsplash License</a>. Cropped, resized and given a subtle dark treatment for this site.</p><ul class="credits-list">'+items+'</ul></article></div></body></html>')

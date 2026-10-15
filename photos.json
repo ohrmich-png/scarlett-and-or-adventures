@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "pc-bridge",
+    "photo": "1698151256842-e658014ea99a",
+    "author": "Muhammad Fauzan Azhima",
+    "source": "https://unsplash.com/photos/a-desk-with-a-lamp-and-a-telephone-on-it-Tvuo62HVNy0",
+    "alt": "A warmly lit desk and laptop in a dark room",
+    "position": "50% 55%"
+  },
+  {
+    "slug": "whatsapp-gateway",
+    "photo": "1759215524630-a6572b3cfb86",
+    "author": "Swello",
+    "source": "https://unsplash.com/photos/smartphone-on-notebook-and-laptop-on-table-CGvC8yWgC-g",
+    "alt": "A smartphone resting beside a laptop and notebook",
+    "position": "50% 50%"
+  },
+  {
+    "slug": "android-apps",
+    "photo": "1535240073203-05bc5d7f1113",
+    "author": "Julius Drost",
+    "source": "https://unsplash.com/photos/black-android-smartphone-nP5YBhsbqB4",
+    "alt": "An Android phone photographed in a dark forest setting",
+    "position": "50% 50%"
+  },
+  {
+    "slug": "tuya-smart-home",
+    "photo": "1712171701258-9a9379d847bd",
+    "author": "Liana S",
+    "source": "https://unsplash.com/photos/a-close-up-of-a-light-bulb-in-a-dark-room-gfPmR3QOxnQ",
+    "alt": "A glowing light bulb against a dark background",
+    "position": "50% 50%"
+  },
+  {
+    "slug": "telegram-client",
+    "photo": "1772618379791-4532fe76d050",
+    "author": "Amanz",
+    "source": "https://unsplash.com/photos/close-up-side-view-of-a-smartphone-on-a-dark-surface-xDR2STDvTJY",
+    "alt": "Close-up of a smartphone on a dark surface",
+    "position": "50% 50%"
+  },
+  {
+    "slug": "flight-radar",
+    "photo": "1728518278514-649c8fe6b949",
+    "author": "Andrés Dallimonti",
+    "source": "https://unsplash.com/photos/a-view-of-the-cockpit-of-an-airplane-at-night-YxiyOOufwo4",
+    "alt": "An aircraft flight deck illuminated during a night flight",
+    "position": "50% 60%"
+  }
+]
