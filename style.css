@@ -127,3 +127,60 @@ figcaption a,.photo-note a{color:var(--gold2);text-decoration:underline;text-und
 .credits-list li{margin:20px 0}
 @media(max-width:640px){.featured>.visual{height:290px}.card>.visual,.card:last-child:nth-child(odd)>.visual{height:230px}.featured .card-copy,.card-copy{padding:28px 26px 32px}.featured:before{font-size:3.2rem}.story-photo .visual{height:260px}}
 @media(prefers-reduced-motion:reduce){.visual img{transition:none}.featured:hover .visual img,.card:hover .visual img{transform:none}}
+
+/* ---- v5: refined, minimal. Less weight, more air, easy to scan ---- */
+body{background:radial-gradient(900px 480px at 80% -10%,#1b1530 0,transparent 70%),var(--bg)}
+body:before{opacity:.35}
+body:after{opacity:.035}
+nav:after{display:none}
+.wrap{max-width:860px}
+.hero{padding:96px 0 56px;text-align:left}
+.hero:before,.hero:after{display:none}
+.hero .eyebrow:before{display:none}
+.hero .eyebrow:after{margin-left:16px;width:36px}
+.hero h1{font-size:clamp(2.4rem,6vw,4.1rem);line-height:1.08;font-weight:500;letter-spacing:-.015em;max-width:none;margin:22px 0 22px}
+.hero h1 em{display:block;font-weight:500;background:none;-webkit-background-clip:initial;background-clip:initial;color:var(--gold)}
+.hero p{margin:0;max-width:520px;font-size:1.05rem;color:var(--muted)}
+.stats{justify-content:flex-start;margin-top:28px}
+.pill{background:none;backdrop-filter:none;border-color:var(--line);color:var(--muted)}
+/* story list: numbered rows, hairlines instead of frames */
+.grid{display:block;counter-reset:c 1;border-top:1px solid var(--line)}
+.featured,.card,.card:last-child:nth-child(odd){display:grid;grid-template-columns:52px minmax(0,1fr) 168px;column-gap:28px;align-items:center;padding:38px 0;margin:0;background:none!important;border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none!important;overflow:visible;transform:none!important;grid-column:auto}
+.featured{border-top:1px solid var(--line);grid-template-columns:52px minmax(0,1fr) 240px;padding:44px 0}
+.featured:before,.card:before{position:static;grid-column:1;grid-row:1;align-self:start;font:italic 500 1.5rem/1.2 var(--serif);color:var(--gold2);-webkit-text-stroke:0;text-shadow:none;transform:none!important;margin-top:2px}
+.card:after,.featured:after{display:none}
+.card-copy,.featured .card-copy{grid-column:2;grid-row:1;padding:0}
+.visual,.featured>.visual,.card>.visual,.card:last-child:nth-child(odd)>.visual{grid-column:3;grid-row:1;height:112px;border-radius:14px;opacity:.9;transition:opacity .4s}
+.featured>.visual{height:150px}
+.visual:after{display:none}
+.card:hover .visual,.featured:hover .visual{opacity:1}
+.card h2{font-size:1.45rem;font-weight:500;margin:10px 0 8px}
+.featured h2{font-size:clamp(1.7rem,3.4vw,2.2rem);font-weight:500;margin:10px 0 10px}
+.card p,.featured p{font-size:.95rem;margin:0;max-width:460px}
+.featured p{margin-bottom:14px}
+.card:hover,.featured:hover{background:none!important}
+.card:hover h2,.featured:hover h2{color:var(--gold)}
+.card h2,.featured h2{transition:color .3s}
+.card .tag,.featured .tag{border:0;padding:0;color:var(--gold2)}
+.featured .more{font-size:.7rem}
+.featured:hover .more{transform:translateX(4px);letter-spacing:.2em}
+/* story page */
+article{padding-top:64px}
+article h1{font-size:clamp(2.3rem,6vw,3.6rem);line-height:1.08;font-weight:500}
+article h1:after{margin-top:24px;width:56px}
+.lede{font-size:1.3rem}
+article p:nth-of-type(2):first-letter{font-size:4rem;font-weight:500}
+.story-photo{margin:28px 0 36px}
+.story-photo .visual{grid-column:auto;height:200px;border-radius:14px;border:0;opacity:.92}
+footer{margin-top:80px}
+@media(max-width:640px){
+.hero{padding:60px 0 36px}
+.featured,.card,.card:last-child:nth-child(odd),.featured{grid-template-columns:30px minmax(0,1fr) 84px;column-gap:16px;padding:28px 0}
+.featured:before,.card:before{font-size:1.2rem}
+.visual,.featured>.visual,.card>.visual,.card:last-child:nth-child(odd)>.visual{height:84px;border-radius:12px}
+.card h2{font-size:1.2rem}.featured h2{font-size:1.45rem}
+.card p,.featured p{font-size:.88rem;line-height:1.55}
+.featured .more{display:none}
+.story-photo .visual{height:160px}
+}
+.card h2,.featured h2{text-wrap:balance}
