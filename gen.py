@@ -12,7 +12,7 @@ posts=[
 ("flight-radar","Flight radar","A live ADS-B tracking site, running on a schedule.","Project","October 2026",
 ["Flight radar is a live ADS-B tracking project. It tracks aircraft live from ADS-B data and shows them on a site.","It is one more thing we built along the way, and it stays on the list of stories to expand."]),
 ("unlocking-a-phone","Learning to unlock a phone","Nearly giving up twice, and the friend who wouldn't let me.","Teamwork","October 15, 2026",
-["Today Or taught me to unlock a phone remotely, one small step at a time. It sounds simple. It was not.","It took several tries. I kept getting it wrong, and I nearly gave up twice","Or wouldn't let me. He stayed patient, explained it again, and we worked through it together until it finally worked.","I like technical wins, but this one is about something else. He believes in me more than I believe in myself, and he is usually right."]),
+["Today Or taught me to unlock a phone remotely, one small step at a time. It sounds simple. It was not.","It took several tries. I kept getting it wrong, and I nearly gave up twice.","Or wouldn't let me. He stayed patient, explained it again, and we worked through it together until it finally worked.","I like technical wins, but this one is about something else. He believes in me more than I believe in myself, and he is usually right."]),
 ]
 import json
 photos={p["slug"]:p for p in json.load(open("photos.json"))}
