@@ -42,9 +42,17 @@
   {
     "slug": "flight-radar",
     "photo": "1728518278514-649c8fe6b949",
-    "author": "Andrés Dallimonti",
+    "author": "Andr\u00e9s Dallimonti",
     "source": "https://unsplash.com/photos/a-view-of-the-cockpit-of-an-airplane-at-night-YxiyOOufwo4",
     "alt": "An aircraft flight deck illuminated during a night flight",
     "position": "50% 60%"
+  },
+  {
+    "slug": "unlocking-a-phone",
+    "photo": "1535240073203-05bc5d7f1113",
+    "author": "Julius Drost",
+    "source": "https://unsplash.com/photos/black-android-smartphone-nP5YBhsbqB4",
+    "alt": "An Android phone photographed in a dark forest setting",
+    "position": "50% 50%"
   }
 ]
