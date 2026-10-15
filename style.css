@@ -34,3 +34,4 @@ article h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin:14px 0 12px;
 .pn{display:flex;justify-content:space-between;gap:16px;margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:.9rem}
 footer{margin-top:56px;color:var(--muted);font-size:.85rem;text-align:center}
 @media(max-width:640px){.grid{grid-template-columns:1fr}.featured{padding:24px}.hero{padding:44px 0 28px}body{font-size:16px}}
+article p{margin:0 0 1.2em}
