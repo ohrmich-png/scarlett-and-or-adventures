@@ -54,5 +54,13 @@
     "source": "https://unsplash.com/photos/black-android-smartphone-nP5YBhsbqB4",
     "alt": "An Android phone photographed in a dark forest setting",
     "position": "50% 50%"
+  },
+  {
+    "slug": "router-api",
+    "photo": "1695199193329-80b0cc659eb3",
+    "author": "Igor Omilaev",
+    "source": "https://unsplash.com/photos/a-close-up-of-a-cable-with-a-black-background-zqnfqFYaIhE",
+    "alt": "Colourful braided cables against a black background",
+    "position": "50% 50%"
   }
 ]
