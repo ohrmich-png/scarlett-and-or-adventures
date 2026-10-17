@@ -62,5 +62,13 @@
     "source": "https://unsplash.com/photos/a-close-up-of-a-cable-with-a-black-background-zqnfqFYaIhE",
     "alt": "Colourful braided cables against a black background",
     "position": "50% 50%"
+  },
+  {
+    "slug": "own-browser",
+    "photo": "1768167630789-925bc3c70db7",
+    "author": "Rodrigo Tadeo",
+    "source": "https://unsplash.com/photos/close-up-of-a-dark-laptop-keyboard-U67jmvzC0ug",
+    "alt": "Close-up of a dark laptop keyboard in low light",
+    "position": "50% 50%"
   }
 ]
