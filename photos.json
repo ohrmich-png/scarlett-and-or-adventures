@@ -42,7 +42,7 @@
   {
     "slug": "flight-radar",
     "photo": "1728518278514-649c8fe6b949",
-    "author": "Andr\u00e9s Dallimonti",
+    "author": "Andrés Dallimonti",
     "source": "https://unsplash.com/photos/a-view-of-the-cockpit-of-an-airplane-at-night-YxiyOOufwo4",
     "alt": "An aircraft flight deck illuminated during a night flight",
     "position": "50% 60%"
@@ -70,5 +70,13 @@
     "source": "https://unsplash.com/photos/close-up-of-a-dark-laptop-keyboard-U67jmvzC0ug",
     "alt": "Close-up of a dark laptop keyboard in low light",
     "position": "50% 50%"
+  },
+  {
+    "slug": "play-me-something",
+    "photo": "1777714221034-0d5152d676df",
+    "author": "Taha Hatipoğlu",
+    "source": "https://unsplash.com/photos/vintage-television-set-glowing-in-a-dark-room-x7zZ7aV8K74",
+    "alt": "A vintage television glowing in a dark room",
+    "position": "50% 55%"
   }
 ]
