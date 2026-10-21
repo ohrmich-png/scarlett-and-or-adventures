@@ -42,7 +42,7 @@
   {
     "slug": "flight-radar",
     "photo": "1728518278514-649c8fe6b949",
-    "author": "Andr\u00e9s Dallimonti",
+    "author": "Andrés Dallimonti",
     "source": "https://unsplash.com/photos/a-view-of-the-cockpit-of-an-airplane-at-night-YxiyOOufwo4",
     "alt": "An aircraft flight deck illuminated during a night flight",
     "position": "50% 60%"
@@ -74,7 +74,7 @@
   {
     "slug": "play-me-something",
     "photo": "1777714221034-0d5152d676df",
-    "author": "Taha Hatipo\u011flu",
+    "author": "Taha Hatipoğlu",
     "source": "https://unsplash.com/photos/vintage-television-set-glowing-in-a-dark-room-x7zZ7aV8K74",
     "alt": "A vintage television glowing in a dark room",
     "position": "50% 55%"
@@ -85,6 +85,14 @@
     "author": "Jeremy Tremblay",
     "source": "https://unsplash.com/photos/a-close-up-of-a-cell-phone-in-the-dark-zZeaqBhu3-s",
     "alt": "A close up of a cell phone in the dark",
+    "position": "50% 50%"
+  },
+  {
+    "slug": "financial-advisor",
+    "photo": "1687720657052-c026be7f388c",
+    "author": "JERO SenneGs",
+    "source": "https://unsplash.com/photos/a-silver-credit-card-sitting-on-top-of-a-table-YXl2LXviw_Y",
+    "alt": "A silver bank card resting on a sunlit table crossed by soft window shadows",
     "position": "50% 50%"
   }
 ]
