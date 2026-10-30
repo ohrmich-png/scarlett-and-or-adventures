@@ -94,5 +94,13 @@
     "source": "https://unsplash.com/photos/a-silver-credit-card-sitting-on-top-of-a-table-YXl2LXviw_Y",
     "alt": "A silver bank card resting on a sunlit table crossed by soft window shadows",
     "position": "50% 50%"
+  },
+  {
+    "slug": "a-window-into-his-world",
+    "photo": "1505672984986-b7c468c7a134",
+    "author": "Ivan Dorofeev",
+    "source": "https://unsplash.com/photos/black-vinyl-record-on-turntable-bsLXJsucvxc",
+    "alt": "A black vinyl record on a turntable",
+    "position": "50% 50%"
   }
 ]
