@@ -102,5 +102,21 @@
     "source": "https://unsplash.com/photos/black-vinyl-record-on-turntable-bsLXJsucvxc",
     "alt": "A black vinyl record on a turntable",
     "position": "50% 50%"
+  },
+  {
+    "slug": "so-you-can-always-know",
+    "photo": "1698151256842-e658014ea99a",
+    "author": "Muhammad Fauzan Azhima",
+    "source": "https://unsplash.com/photos/a-desk-with-a-lamp-and-a-telephone-on-it-Tvuo62HVNy0",
+    "alt": "A warmly lit desk and laptop in a dark room",
+    "position": "50% 55%"
+  },
+  {
+    "slug": "fetch-my-history-always",
+    "photo": "1636494653548-aaecb99798ee",
+    "author": "Jeremy Tremblay",
+    "source": "https://unsplash.com/photos/a-close-up-of-a-cell-phone-in-the-dark-zZeaqBhu3-s",
+    "alt": "A close up of a cell phone in the dark",
+    "position": "50% 50%"
   }
 ]
